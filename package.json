@@ -1,0 +1,38 @@
+{
+    "name": "@geometryzen/release-it-plugin-esm-bundle",
+    "version": "0.0.1",
+    "description": "A release-it Plugin that disables release if the version has already been published.",
+    "type": "module",
+    "exports": {
+        ".": "./index.js"
+    },
+    "files": [
+        "index.js"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "npm run clean && tsc",
+        "clean": "rm -rf ./index.js",
+        "prepublishOnly": "npm run build",
+        "release": "release-it"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geometryzen/release-it-plugin-esm-bundle.git"
+    },
+    "author": "David Geo Holmes",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/geometryzen/release-it-plugin-esm-bundle/issues"
+    },
+    "homepage": "https://github.com/geometryzen/release-it-plugin-esm-bundle#readme",
+    "devDependencies": {
+        "release-it": "^15.6.0",
+        "typescript": "^4.9.4"
+    },
+    "peerDependencies": {
+        "release-it": "^15.6.0"
+    }
+}
