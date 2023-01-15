@@ -56,7 +56,6 @@ export default class VersionPlugin extends Plugin<VersionPluginOptions> {
 function getDepName(): string {
     const packageJson = readPackageJson();
     const wrapperScope = getWrapperScope(packageJson);
-    console.log(`wrapperScope=${JSON.stringify(wrapperScope)}`);
     const withoutPrefix = packageJson.name.replace(`@${wrapperScope}/`, "");
     const [scope, name] = withoutPrefix.split("__");
     if (name) {
