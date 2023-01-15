@@ -1,6 +1,6 @@
 {
     "name": "@geometryzen/release-it-plugin-esm-bundle",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A release-it Plugin that disables release if the version has already been published.",
     "type": "module",
     "exports": {
