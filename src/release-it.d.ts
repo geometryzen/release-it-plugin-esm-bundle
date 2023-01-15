@@ -1,6 +1,7 @@
 declare module "release-it" {
-    class Plugin {
+    class Plugin<T> {
         static disablePlugin(): string[];
+        options: T;
         getIncrementedVersionCI(): string;
     }
 }
