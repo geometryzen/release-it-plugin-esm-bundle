@@ -38,5 +38,5 @@ test('Plugin returns the dependency version.', async () => {
     const options = { [namespace]: { depName: "jsxgraph" } };
     const plugin = factory(VersionPlugin, { namespace, options });
     const version = plugin.getIncrementedVersionCI()
-    assert.equal(version, "1.5.0-rc2");
+    assert.equal(version, "1.6.0");
 });

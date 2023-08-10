@@ -31,18 +31,19 @@
     },
     "homepage": "https://github.com/geometryzen/release-it-plugin-esm-bundle#readme",
     "dependencies": {
-        "semver": "^7.3.8"
+        "semver": "^7.5.4"
     },
     "devDependencies": {
-        "@types/semver": "7.3.13",
+        "@types/node": "^20.4.9",
+        "@types/semver": "7.5.0",
         "bron": "^2.0.3",
-        "jsxgraph": "1.5.0-rc2",
-        "release-it": "^15.6.0",
-        "semver": "^7.3.8",
-        "sinon": "^15.0.1",
-        "typescript": "^4.9.4"
+        "jsxgraph": "1.6.0",
+        "release-it": "^16.1.4",
+        "semver": "^7.5.4",
+        "sinon": "^15.2.0",
+        "typescript": "^5.1.6"
     },
     "peerDependencies": {
-        "release-it": "^15.6.0"
+        "release-it": "^16.1.4"
     }
 }
